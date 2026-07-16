@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Practice</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to HTML Practice</h1>
+        <p>Learn almost every important HTML tag.</p>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#table">Table</a> |
+            <a href="#form">Form</a> |
+            <a href="#media">Media</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About HTML</h2>
+
+        <p>
+            HTML stands for <strong>HyperText Markup Language</strong>.
+            It is used to create <em>web pages</em>.
+        </p>
+
+        <p>
+            <b>Bold</b><br>
+            <i>Italic</i><br>
+            <u>Underline</u><br>
+            <mark>Highlighted</mark><br>
+            H<sub>2</sub>O<br>
+            x<sup>2</sup><br>
+            <small>Small Text</small><br>
+            <del>Deleted Text</del><br>
+            <ins>Inserted Text</ins>
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- Lists -->
+    <section>
+        <h2>Lists</h2>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+        </ul>
+
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Markup Language</dd>
+
+            <dt>CSS</dt>
+            <dd>Styling Language</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <!-- Image -->
+    <section>
+        <h2>Image</h2>
+
+        <img src="https://via.placeholder.com/250"
+             alt="Sample Image"
+             width="250">
+    </section>
+
+    <hr>
+
+    <!-- Links -->
+    <section>
+        <h2>Links</h2>
+
+        <a href="https://www.google.com" target="_blank">
+            Visit Google
+        </a>
+    </section>
+
+    <hr>
+
+    <!-- Table -->
+    <section id="table">
+        <h2>Student Table</h2>
+
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Name</th>//dark ya heading
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+
+            <tr>
+                <td>Tanmay</td>
+                <td>20</td>
+                <td>B.Tech</td>
+            </tr>
+
+            <tr>
+                <td>Rahul</td>
+                <td>21</td>
+                <td>BCA</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Form -->
+    <section id="form">
+        <h2>Registration Form</h2>
+
+        <form>
+
+            <label>Name:</label><br>
+            <input type="text"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email"><br><br>
+
+            <label>Password:</label><br>
+            <input type="password"><br><br>
+
+            <label>Age:</label><br>
+            <input type="number"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date"><br><br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <br><br>
+
+            <label>Skills:</label><br>
+
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+            <br><br>
+
+            <label>Select Course:</label><br>
+
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+
+            <br><br>
+
+            <label>Message:</label><br>
+
+            <textarea rows="5" cols="30"></textarea>
+
+            <br><br>
+
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Media -->
+    <section id="media">
+        <h2>Audio</h2>
+
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+        </audio>
+
+        <h2>Video</h2>
+
+        <video width="320" controls>
+            <source src="sample.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- iframe -->
+    <section>
+        <h2>Iframe</h2>
+
+        <iframe
+            src="https://example.com"
+            width="400"
+            height="200">
+        </iframe>
+    </section>
+
+    <hr>
+
+    <!-- Details -->
+    <section>
+
+        <details>
+            <summary>Click to Read More</summary>
+
+            <p>
+                HTML is the backbone of every website.
+            </p>
+
+        </details>
+
+    </section>
+
+    <hr>
+
+    <!-- Progress -->
+    <section>
+
+        <h2>Progress</h2>
+
+        <progress value="70" max="100"></progress>
+
+        <br><br>
+
+        <meter value="0.8">80%</meter>
+
+    </section>
+
+    <hr>
+
+    <!-- Code -->
+    <section>
+
+        <h2>Code Example</h2>
+
+        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    cout << "Hello";
+}
+        </pre>
+
+        <code>
+int a = 10;
+        </code>
+
+    </section>
+
+    <hr>
+
+    <!-- Blockquote -->
+    <section>
+
+        <blockquote>
+            "The best way to learn HTML is by building projects."
+        </blockquote>
+
+    </section>
+
+    <hr>
+
+    <!-- Div and Span -->
+    <section>
+
+        <div style="background-color: lightblue; padding:10px;">
+            This is a DIV element.
+        </div>
+
+        <p>
+            This is
+            <span style="color:red;">
+                SPAN
+            </span>
+            inside a paragraph.
+        </p>
+
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>&copy; 2026 HTML Practice Page | Created by Tanmay</p>
+
+    </footer>
+
+</body>
+
+</html>
