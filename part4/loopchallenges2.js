@@ -114,10 +114,72 @@ store the other teas in an array named 'preferredteas' */
 /*
 7. write a 'foreach' loop that iterates through the array '["earl grey","green tea","chai","oolang tea"]
 stop the loops when "chai" is found, and store all previous tea types in an array named 'available teas' */
-let teacollection=["earl grey","green tea","chai","oolang tea"];
-let availabletea=[];
-for(const tea in teacollection){
-    if(tea==="chai") break;
-    availabletea.push(tea);
+// let teacollection=["earl grey","green tea","chai","oolang tea"];
+// let availabletea=[];
+// for(const tea in teacollection){
+//     if(tea==="chai") break;
+//     availabletea.push(tea);
+// }
+// console.log(availabletea);
+// let teacollection=["earl grey","green tea","chai","oolang tea"];
+// let availableteas=[];
+// teacollection.forEach((tea)=>{
+//     console.log(tea);
+// });
+//  let teacollection=["earl grey","green tea","chai","oolang tea"];
+//  let availableteas=[];
+//  teacollection.forEach(function(tea){
+//     if(tea==="chai"){
+//         return ;
+//     }
+//     availableteas.push(tea);
+//  })
+//  console.log(availableteas);
+ /*
+8. Write a 'foreach' loop that iterates through the array 
+'["berlin","tokyo","sydney","paris"] .
+skip "sydeny" and store the other cities in a new array
+named 'traveledcities. */
+// let citynames=["berlin","tokyo","sydney","paris"];
+// let traveledcities=[];
+// citynames.forEach(function(city){
+//     if(city==="sydney") {
+//         return;}
+//     traveledcities.push(city);
+// });
+// console.log(traveledcities);
+// without function
+// let citynames=["berlin","tokyo","sydney","paris"];
+// let traveledcities=[];
+// citynames.forEach((city)=>{
+//     if(city==="sydney"  ){
+//         return ;}
+//         traveledcities.push(city);
+// });
+// console.log(traveledcities);
+
+/*
+9. write a 'for' loop that iterates through the array '[2,5,7,9]'
+skip the value '7' and multiply the rest by 2. Store the result 
+in a new array named 'doublenumbers'*/
+let num=[2,5,7,9];
+let doublenumbers=[];
+//return can only be used inside a function else break or continue will going to be used
+for(let i=0;i<num.length;i++){
+    if(num[i]===7) continue;
+    
+    doublenumbers.push(num[i]*2);
+};
+console.log(doublenumbers);
+/*
+10. use a 'for-of' loop  to iterate through the array ["chai","green tea","black tea","jasmine tea","herbel tea"]
+and stop when the length of the current tea name is greater than 10 .
+store the teas iterated over in array named 'shortTea'*/
+let longtea= ["chai","green tea","black tea","jasmine tea","herbel tea"];
+let shortTea=[];
+let i;
+for(tea of longtea){
+    if(tea.length > 10 ) break ;
+    shortTea.push(tea);
 }
-console.log(availabletea);
+console.log(shortTea);
